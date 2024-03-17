@@ -1,89 +1,69 @@
 /* Основні стилі */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url('шлях/до/вашого/фонового/зображення.jpg');
-  background-size: cover;
-  color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;file-mfTUTeSF2ZIkqPDNNjcNYm2F (2).webp
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
-#container {
-  width: 80%;
-  margin: 0 auto;
+a {
+    color: #00D1B2;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Шапка сайту */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+a:hover {
+    color: #ffffff;
 }
 
-/* Головне меню */
-nav {
-  /* Стилі для головного меню */
+/* Стилі меню навігації */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #131313;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+.navbar a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: #00D1B2;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+/* Герой-секція */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    color: #ffffff;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
+.hero-section h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
 }
 
-/* Ефекти при наведенні для посилань */
-nav ul li a:hover {
-  border-bottom: 1px solid white;
+.hero-section p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
-/* Контент */
-main {
-  text-align: center;
-  /* Інші стилі для основного контенту */
+.register-btn {
+    background-color: #F44336;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
-/* Кнопки */
-button {
-  background-color: #0066cc;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.register-btn:hover {
+    background-color: #D32F2F;
 }
 
-/* Ефекти при наведенні для кнопок */
-button:hover {
-  background-color: #004499;
-}
-
-/* Підвал сайту */
-footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Адаптивність */
-@media (max-width: 768px) {
-  header, footer {
-    flex-direction: column;
-  }
-}
+/* Додаткові стилі для інших секцій та адаптивний дизайн */
