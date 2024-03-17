@@ -69,15 +69,17 @@ section {
 button {
     background: #5cacf2;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 20px 0;
-    cursor: pointer;
-}
-
 footer {
     background: #333;
     color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
     text-align: center;
     padding: 20px 0;
     position: fixed;
