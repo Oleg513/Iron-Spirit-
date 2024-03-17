@@ -1,32 +1,34 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(180deg, #f85032, #e73827);
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-header.hero {
-    background-image: url('path/to/your/hero-background.jpg');
-    background-size: cover;
-    padding: 5rem 1rem;
-    text-align: center;
+.navbar.show {
+  animation: slideIn 0.5s forwards;
 }
 
-header.hero h1 {
-    color: #ffd700;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Ensure it's below the navbar */
 }
 
-header.hero p {
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
+.navbar a:hover,
+.navbar a.active {
+  color: #34495e;
+  background-color: #f4d03f;
 }
-
-header.hero a.btn-primary {
     background-color: #f4d03f;
     color: white;
     padding: 1rem 2rem;
