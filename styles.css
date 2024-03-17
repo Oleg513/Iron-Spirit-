@@ -1,75 +1,89 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-header {
+/* Navbar Styles */
+nav {
     background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
     text-align: center;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+nav ul li {
+    display: inline-block;
 }
 
-.navbar a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
-    padding: 10px 20px;
+    color: #fff;
+    padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
 }
 
-.navbar a:hover {
+nav ul li a:hover {
     background-color: #555;
 }
 
-main {
-    padding: 20px;
-}
-
-.hero-section {
+/* Hero Section Styles */
+.hero {
     text-align: center;
-    padding: 50px 0;
-    background-color: #007bff;
+    padding: 5rem 0;
     color: #fff;
 }
 
-.hero-section h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-.hero-section p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
-.button {
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
+.hero .btn {
     display: inline-block;
-    font-size: 1.1em;
-    border-radius: 5px;
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #218838;
+.hero .btn:hover {
+    background-color: #ff6347;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
