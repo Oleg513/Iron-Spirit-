@@ -1,4 +1,49 @@
-body {
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турнір Iron Spirit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home">Головна</a>
+            <a href="#about">Про Нас</a>
+            <a href="#tournaments">Турніри</a>
+            <a href="#register">Реєстрація</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero-section">
+            <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
+            <p>Долучайтесь до нас під яскравим сонцем для незабутньої битви в Mobile Legends!</p>
+            <a href="#" class="button">Зареєструватись Зараз</a>
+        </section>
+        <section id="about">
+            <!-- Про турнір -->
+        </section>
+        <section id="tournaments">
+            <!-- Інформація про турніри -->
+        </section>
+        <section id="register">
+            <!-- Форма реєстрації -->
+        </section>
+        <section id="faq">
+            <!-- Відповіді на часті запитання -->
+        </section>
+        <section id="contact">
+            <!-- Контактна інформація -->
+        </section>
+    </main>
+    <footer>
+        <!-- Підвал сайту -->
+    </footer>
+</body>
+</html>body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
