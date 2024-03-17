@@ -1,29 +1,37 @@
-/* Основні стилі */
+/* Основні стилі та змінні */
+:root {
+    --primary-color: #00D1B2;
+    --hover-color: #ffffff;
+    --btn-bg-color: #F44336;
+    --btn-hover-bg-color: #D32F2F;
+    --navbar-bg-color: #131313;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://github.com/Oleg513/Iron-Spirit-/blob/main/file-mfTUTeSF2ZIkqPDNNjcNYm2F%20(2).webp?raw=true');
+    background-image: url;
     background-size: cover;
     background-position: center;
     color: white;
 }
 
 a {
-    color: #00D1B2;
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ffffff;
+    color: var(--hover-color);
 }
 
-/* Стилі меню навігації */
+/* Навігація */
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #131313;
+    background-color: var(--navbar-bg-color);
     padding: 20px;
     position: sticky;
     top: 0;
@@ -33,48 +41,40 @@ a:hover {
 .navbar a {
     margin: 0 15px;
     font-weight: bold;
-    color: #00D1B2;
 }
 
 /* Герой-секція */
 .hero-section {
     text-align: center;
     padding: 100px 20px;
-    color: #ffffff;
+}
+
+.hero-section h1, .hero-section p {
+    margin-bottom: 20px;
 }
 
 .hero-section h1 {
-    margin-bottom: 20px;
     font-size: 2.5rem;
 }
 
 .hero-section p {
-    margin-bottom: 20px;
     font-size: 1.2rem;
 }
 
-.register-btn {
-    background-color: #F44336;
-    color: #ffffff;
+/* Кнопки */
+button, .register-btn {
+    background-color: var(--btn-bg-color);
+    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     font-size: 1rem;
     text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
-.register-btn:hover {
-    background-color: #D32F2F;
-}
-
-/* Додаткові стилі для інших секцій та адаптивний дизайн */
-    cursor: pointer;
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-.register-btn:hover {
-    background-color: #D32F2F;
+button:hover, .register-btn:hover {
+    background-color: var(--btn-hover-bg-color);
 }
 
 /* Додаткові стилі для інших секцій та адаптивний дизайн */
