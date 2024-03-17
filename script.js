@@ -18,3 +18,34 @@ buttons.forEach(button => {
 
 // Initialize AOS library for scroll animations
 AOS.init();
+
+// Додайте ваші нові функції тут
+
+// Меню Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+menuToggle.addEventListener('click', function() {
+  navbar.classList.toggle('show');
+});
+
+// Закриття меню при кліку на посилання
+const menuLinks = document.querySelectorAll('.navbar a');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    navbar.classList.remove('show');
+  });
+});
+
+// Плавна прокрутка до розділів при кліку на посилання у меню
+menuLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
