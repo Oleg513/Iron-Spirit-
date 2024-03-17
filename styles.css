@@ -43,17 +43,20 @@ nav ul li a:hover {
 .hero {
     text-align: center;
     padding: 5rem 0;
-    color: #fff;
+    color: #fff; /* Колір тексту */
+    background-color: #333; /* Колір фону */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: 'Arial Black', sans-serif; /* Шрифт заголовка */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif; /* Шрифт тексту */
 }
 
 .hero .btn {
