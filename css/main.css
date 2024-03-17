@@ -1,85 +1,51 @@
-/* Скидання стилів */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-/* Головний контент */
 header {
-    background: #333; /* Змінено з background-image на твердий колір для кращої видимості */
+    background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 100px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-nav {
-    background: #555; /* Змінено колір для кращої видимості */
-    background: #333; /* Темніший колір для кращої видимості */
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    overflow: hidden;
 }
 
 nav ul li {
-    float: left;
-    display: block;
-    position: relative;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #ddd; /* Змінено колір тексту для кращої видимості */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-nav ul li a:hover, nav ul li .dropdown:hover .dropbtn {
-    background-color: #666;
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Анімація fadeIn для dropdown */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
