@@ -33,12 +33,23 @@
             <h2>Турніри</h2>
             <p>Перелік майбутніх та минулих турнірів...</p>
         </section>
-        <section id="registration">
-            <h2>Реєстрація</h2>
-            <form>
-                <!-- Форма реєстрації тут -->
-            </form>
-        </section>
+<section id="registration">
+    <h2>Реєстрація</h2>
+    <form id="registration-form">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="team-name">Назва команди:</label>
+        <input type="text" id="team-name" name="team-name">
+
+        <!-- Додайте інші поля за потребою -->
+
+        <input type="submit" value="Зареєструватись">
+    </form>
+</section>
         <section id="faq">
             <h2>FAQ</h2>
             <p>Відповіді на часті питання...</p>
