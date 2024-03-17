@@ -17,19 +17,23 @@ buttons.forEach(button => {
 });
 
 // Initialize AOS library for scroll animations
-AOS.init();
+if (typeof AOS !== 'undefined') {
+  AOS.init();
+}
 
-// Змінна для елемента затемнення
+// Перевіряємо, чи існують елементи перед додаванням обробників подій
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
 const backdrop = document.querySelector('.backdrop');
 
-menuToggle.addEventListener('click', function() {
-  navbar.classList.toggle('show');
-  // Переключення відображення елемента затемнення
-  backdrop.style.display = navbar.classList.contains('show') ? 'block' : 'none';
-});
+if (menuToggle && navbar && backdrop) {
+  menuToggle.addEventListener('click', function() {
+    navbar.classList.toggle('show');
+    backdrop.style.display = navbar.classList.contains('show') ? 'block' : 'none';
+  });
 
-// Додавання обробника кліків на елемент затемнення для закриття меню
-backdrop.addEventListener('click', function() {
-  navbar.classList.remove('show');
-  backdrop.style.display = 'none';
-});
+  backdrop.addEventListener('click', function() {
+    navbar.classList.remove('show');
+    backdrop.style.display = 'none';
+  });
+}
