@@ -1,0 +1,67 @@
+/* Основні стилі */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Стилі для навігації */
+.navbar {
+    background: #333;
+    color: #fff;
+    overflow: hidden;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Стилі для головної секції */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('images/main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Медіа запити для адаптивності */
+@media (max-width: 768px) {
+    .navbar a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 20px;
+        background-size: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        padding: 8px;
+        text-align: left;
+    }
+
+    .hero-section {
+        padding: 10px;
+        background-size: auto;
+    }
+}
