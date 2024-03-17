@@ -1,11 +1,10 @@
+/* Основні стилі */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('https://github.com/Oleg513/Iron-Spirit-/blob/main/file-mfTUTeSF2ZIkqPDNNjcNYm2F%20(2).webp?raw=true');
+  background-image: url('шлях/до/вашого/фонового/зображення.jpg');
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   color: white;
 }
 
@@ -14,6 +13,7 @@ body {
   margin: 0 auto;
 }
 
+/* Шапка сайту */
 header {
   display: flex;
   justify-content: space-between;
@@ -21,6 +21,7 @@ header {
   padding: 20px;
 }
 
+/* Головне меню */
 nav {
   /* Стилі для головного меню */
 }
@@ -41,15 +42,18 @@ nav ul li a {
   font-size: 1.2em;
 }
 
+/* Ефекти при наведенні для посилань */
 nav ul li a:hover {
   border-bottom: 1px solid white;
 }
 
+/* Контент */
 main {
   text-align: center;
   /* Інші стилі для основного контенту */
 }
 
+/* Кнопки */
 button {
   background-color: #0066cc;
   color: white;
@@ -62,10 +66,12 @@ button {
   transition: background-color 0.3s ease;
 }
 
+/* Ефекти при наведенні для кнопок */
 button:hover {
   background-color: #004499;
 }
 
+/* Підвал сайту */
 footer {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -75,23 +81,9 @@ footer {
   width: 100%;
 }
 
+/* Адаптивність */
 @media (max-width: 768px) {
   header, footer {
     flex-direction: column;
   }
-}
-  font-size: 24px;
-}
-
-.navbar a:hover {
-  background-color: #555;
-}
-
-nav.navbar {
-  background-color: #232526;
-  padding: 0.5rem 2rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
 }
