@@ -37,3 +37,42 @@
 #registration-form input[type="submit"]:hover {
     background-color: #3f51b5; /* Колір фону кнопки при наведенні */
 }
+#registration-form {
+    max-width: 400px; /* Максимальна ширина форми */
+    margin: 0 auto; /* Вирівнювання форми по центру */
+    padding: 15px; /* Відступи всередині форми */
+    background-color: #f9f9f9; /* Колір фону форми */
+    border-radius: 8px; /* Закруглення кутів форми */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тінь для форми */
+}
+
+#registration-form label {
+    display: block; /* Робить елементи label блочними */
+    margin-top: 10px; /* Верхній відступ для елементів label */
+    color: #333; /* Колір тексту */
+}
+
+#registration-form input[type="text"],
+#registration-form input[type="email"] {
+    width: 100%; /* Ширина поля вводу */
+    padding: 8px; /* Відступи всередині поля вводу */
+    margin-top: 5px; /* Верхній відступ для поля вводу */
+    border: 1px solid #ccc; /* Бордюр поля вводу */
+    border-radius: 4px; /* Закруглення кутів поля вводу */
+}
+
+#registration-form input[type="submit"] {
+    width: 100%; /* Ширина кнопки */
+    padding: 10px; /* Відступи всередині кнопки */
+    margin-top: 15px; /* Верхній відступ для кнопки */
+    border: none; /* Видаляємо бордюр кнопки */
+    border-radius: 4px; /* Закруглення кутів кнопки */
+    background-color: #5c6bc0; /* Колір фону кнопки */
+    color: white; /* Колір тексту кнопки */
+    cursor: pointer; /* Вказівник курсора при наведенні */
+    transition: background-color 0.3s; /* Анімація фону кнопки */
+}
+
+#registration-form input[type="submit"]:hover {
+    background-color: #3f51b5; /* Колір фону кнопки при наведенні */
+}
