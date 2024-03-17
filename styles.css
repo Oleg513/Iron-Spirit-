@@ -1,46 +1,75 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Турнір Iron Spirit</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="#home">Головна</a>
-            <a href="#about">Про Нас</a>
-            <a href="#tournaments">Турніри</a>
-            <a href="#register">Реєстрація</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Контакти</a>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="hero-section">
-            <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
-            <p>Долучайтесь до нас під яскравим сонцем для незабутньої битви в Mobile Legends!</p>
-            <a href="#" class="button">Зареєструватись Зараз</a>
-        </section>
-        <section id="about">
-            <!-- Про турнір -->
-        </section>
-        <section id="tournaments">
-            <!-- Інформація про турніри -->
-        </section>
-        <section id="register">
-            <!-- Форма реєстрації -->
-        </section>
-        <section id="faq">
-            <!-- Відповіді на часті запитання -->
-        </section>
-        <section id="contact">
-            <!-- Контактна інформація -->
-        </section>
-    </main>
-    <footer>
-        <!-- Підвал сайту -->
-    </footer>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
