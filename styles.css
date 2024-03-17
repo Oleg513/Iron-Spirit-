@@ -1,27 +1,33 @@
-@keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+@media screen and (max-width: 768px) {
+  .navbar a {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
 
-.navbar.show {
-  animation: slideIn 0.5s forwards;
+.navbar a:hover,
+.navbar a.active {
+  color: #ffffff;
+  background-color: #34495e;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.backdrop {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999; /* Ensure it's below the navbar */
+.btn-primary:hover {
+  background-color: #e67e22;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Додавання тіні для кнопок */
+.btn {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Зміна стилів посилань для покращеного візуального вигляду */
+.navbar a {
+  transition: color 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 }
 
 .navbar a:hover,
