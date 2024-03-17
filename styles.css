@@ -1,53 +1,58 @@
-/* Стилі для кнопки "Повернутися до верху" */
-.scroll-to-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 999;
-    transition: opacity 0.3s ease;
-}
-.scroll-to-top-btn.show {
-    display: block;
-}
-/* Анімація для кнопки "Повернутися до верху" */
-.scroll-to-top-btn:hover {
-    background-color: #555;
-}
-/* Стилі для навігаційної панелі */
-.navbar {
-    background-color: #222;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    transition: background-color 0.3s ease;
-}
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-    transition: color 0.3s ease;
-}
-.navbar a:hover {
-    color: #ccc;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Spirit Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Анімація при наведенні */
+        .btn {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
 
-/* Стилі для Hero Section */
-.hero {
-    background-image: url("file-mfTUTeSF2ZIkqPDNNjcNYm2F (2).webp");
-    background-size: cover;
-    background-position: center;
-    /* Додаткові стилі для вашого блоку .hero */
-}
+        /* Паралакс ефект */
+        .hero {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-/* Додаткові стилі для розділів та інших секцій */
-/* Додайте стилі для решти секцій */
+        /* Адаптивний дизайн */
+        @media (max-width: 768px) {
+            .navbar-menu {
+                display: none;
+            }
+            .navbar-toggle {
+                display: block;
+            }
+        }
+
+        /* Використання шрифтів */
+        body {
+            font-family: 'Mobile Legends', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ваша навігаційна панель, розділи та інші елементи тут -->
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
+            <p>Запрошуємо вас приєднатися до нашого турніру.</p>
+            <a href="#registration" class="btn">Зареєструватись Зараз</a>
+        </div>
+    </section>
+
+    <!-- Додайте інші розділи та секції з аналогічними стилями -->
+
+    <script src="scripts.js"></script>
+</body>
+</html>
