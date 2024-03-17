@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Турнір Iron Spirit</title>
     <link rel="stylesheet" href="css/main.css">
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турнір Iron Spirit</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- Герой-секція (Hero Section) -->
-    <header>
-        <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
-        <p>Приєднуйтеся до змагання і покажіть свій бойовий дух!</p>
-        <button onclick="location.href='#registration'">Зареєструватись Зараз</button>
-    </header>
-    
-    <!-- Меню навігації (Navbar) -->
     <nav>
         <ul>
             <li><a href="#home">Головна</a></li>
-            <li><a href="#about">Про Нас</a></li>
+            <li class="dropdown">
+                <a href="#about">Про Нас</a>
+                <ul class="dropdown-content">
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#history">Історія</a></li>
+                    <li><a href="#mission">Місія</a></li>
+                </ul>
+            </li>
             <li><a href="#tournaments">Турніри</a></li>
-            <li><a href="#registration">Реєстрація</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Контакти</a></li>
+            <!-- Інші пункти меню -->
         </ul>
     </nav>
-
-    <!-- Секція Про Нас (About Us) -->
-    <section id="about">
-        <h2>Про Нас</h2>
-        <p>Тут буде інформація про місію, цілі турніру і організаторів.</p>
-    </section>
-
+    <!-- Решта змісту index.html -->
+</body>
+</html>
     <!-- Секція Турніри (Tournaments) -->
     <section id="tournaments">
         <h2>Турніри</h2>
