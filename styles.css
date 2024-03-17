@@ -1,3 +1,22 @@
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: slideIn 0.5s forwards;
+}
+
 @media screen and (max-width: 768px) {
   .navbar a {
     padding: 10px 15px;
@@ -5,26 +24,36 @@
   }
 }
 
+.navbar a {
+  color: #f4d03f;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
 .navbar a:hover,
 .navbar a.active {
   color: #ffffff;
   background-color: #34495e;
-  transition: background-color 0.3s ease-in-out;
 }
 
-.btn-primary:hover {
-  background-color: #e67e22;
-  transition: background-color 0.3s ease-in-out;
+.menu-toggle {
+    display: none;
 }
 
-/* Додавання тіні для кнопок */
-.btn {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar.show {
+    display: flex;
+  }
 }
 
-/* Зміна стилів посилань для покращеного візуального вигляду */
-.navbar a {
-  transition: color 0.3s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
