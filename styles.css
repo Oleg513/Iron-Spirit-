@@ -41,7 +41,7 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('images/hero-bg.jpg'); /* Background image added */
+    background-image: url('new-folder/hero-background.jpg'); /* Updated background image path */
     background-size: cover; /* Ensure the background image covers the entire area */
     background-position: center; /* Center the background image */
     text-align: center;
