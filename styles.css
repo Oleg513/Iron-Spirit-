@@ -1,67 +1,44 @@
-/* Основні стилі */
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Стилі для навігації */
-.navbar {
-    background: #333;
-    color: #fff;
-    overflow: hidden;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar a {
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-/* Стилі для головної секції */
-.hero-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('images/main-bg.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Медіа запити для адаптивності */
-@media (max-width: 768px) {
-    .navbar a {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .hero-section {
-        padding: 20px;
-        background-size: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar a {
-        padding: 8px;
-        text-align: left;
-    }
-
-    .hero-section {
-        padding: 10px;
-        background-size: auto;
-    }
-}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турнір Iron Spirit</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            {% for link in iron_spirit_website.navbar_links %}
+                <a href="#{{ link.lower().replace(' ', '-') }}">{{ link }}</a>
+            {% endfor %}
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero-section">
+            <h1>{{ iron_spirit_website.hero_section_title }}</h1>
+            <p>{{ iron_spirit_website.hero_section_subtitle }}</p>
+            <a href="#" class="button">{{ iron_spirit_website.register_button_text }}</a>
+        </section>
+        <section id="about">
+            <p>{{ iron_spirit_website.about_us_section }}</p>
+        </section>
+        <section id="tournaments">
+            <p>{{ iron_spirit_website.tournaments_section }}</p>
+        </section>
+        <section id="register">
+            <p>{{ iron_spirit_website.registration_section }}</p>
+        </section>
+        <section id="faq">
+            <p>{{ iron_spirit_website.faq_section }}</p>
+        </section>
+        <section id="contact">
+            <p>{{ iron_spirit_website.contact_section }}</p>
+        </section>
+    </main>
+    <footer>
+        <!-- Підвал сайту -->
+    </footer>
+</body>
+</html>
