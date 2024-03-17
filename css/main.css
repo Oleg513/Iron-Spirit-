@@ -26,7 +26,7 @@ header {
 
 nav {
     background: #555; /* Змінено колір для кращої видимості */
-    color: #fff;
+    background: #333; /* Темніший колір для кращої видимості */
     padding: 10px 0;
     text-align: center;
 }
