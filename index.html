@@ -6,81 +6,41 @@
     <title>Iron Spirit Tournament</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Стилі для контейнера */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            overflow: hidden;
-        }
-
-        /* Стилі для навігаційної панелі */
-        .navbar {
-            background-color: #333;
-            padding: 10px 0;
-        }
-        .navbar-menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .navbar-menu li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-        .navbar-menu li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .navbar-menu li a:hover {
-            color: #ccc;
-        }
-
-        /* Стилі для Hero Section */
-        .hero {
-            background-color: #555;
-            color: #fff;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
+        /* Анімація при наведенні */
         .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #f00;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
-        /* Додаткові стилі для розділів та інших секцій */
-        /* Додайте стилі для решти секцій */
+        /* Паралакс ефект */
+        .hero {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
+        /* Адаптивний дизайн */
+        @media (max-width: 768px) {
+            .navbar-menu {
+                display: none;
+            }
+            .navbar-toggle {
+                display: block;
+            }
+        }
+
+        /* Використання шрифтів */
+        body {
+            font-family: 'Mobile Legends', sans-serif;
+        }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <ul class="navbar-menu">
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#about">Про Нас</a></li>
-                <li><a href="#tournaments">Турніри</a></li>
-                <li><a href="#registration">Реєстрація</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Ваша навігаційна панель, розділи та інші елементи тут -->
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -91,7 +51,7 @@
         </div>
     </section>
 
-    <!-- Додайте інші розділи та секції з аналогічними контейнерами -->
+    <!-- Додайте інші розділи та секції з аналогічними стилями -->
 
     <script src="scripts.js"></script>
 </body>
