@@ -1,0 +1,15 @@
+/* Styles for Iron Spirit Tournament */
+.hero {
+  background-image: url('new-folder/hero-background.jpg'); /* Hero section background image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 5rem 0;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+}
+
+/* Add more styles as needed */
