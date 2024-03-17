@@ -41,10 +41,13 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
+    background-image: url('images/hero-bg.jpg'); /* Background image added */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
     text-align: center;
     padding: 5rem 0;
-    color: #fff; /* Колір тексту */
-    background-color: #333; /* Колір фону */
+    color: #fff;
+}
 }
 
 .hero h1 {
