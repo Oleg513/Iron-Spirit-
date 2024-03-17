@@ -350,3 +350,43 @@ nav.navbar {
     padding: 10px 15px;
   }
 }
+
+/* CSS код для анімації виїзду меню */
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Початкове положення виїзду меню */
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+}
+
+.navbar.show {
+    right: 0; /* Показати меню */
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
