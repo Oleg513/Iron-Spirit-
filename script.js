@@ -19,33 +19,17 @@ buttons.forEach(button => {
 // Initialize AOS library for scroll animations
 AOS.init();
 
-// Додайте ваші нові функції тут
-
-// Меню Toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navbar = document.querySelector('.navbar');
+// Змінна для елемента затемнення
+const backdrop = document.querySelector('.backdrop');
 
 menuToggle.addEventListener('click', function() {
   navbar.classList.toggle('show');
+  // Переключення відображення елемента затемнення
+  backdrop.style.display = navbar.classList.contains('show') ? 'block' : 'none';
 });
 
-// Закриття меню при кліку на посилання
-const menuLinks = document.querySelectorAll('.navbar a');
-
-menuLinks.forEach(link => {
-  link.addEventListener('click', function() {
-    navbar.classList.remove('show');
-  });
-});
-
-// Плавна прокрутка до розділів при кліку на посилання у меню
-menuLinks.forEach(link => {
-  link.addEventListener('click', function(event) {
-    event.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    targetSection.scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
+// Додавання обробника кліків на елемент затемнення для закриття меню
+backdrop.addEventListener('click', function() {
+  navbar.classList.remove('show');
+  backdrop.style.display = 'none';
 });
