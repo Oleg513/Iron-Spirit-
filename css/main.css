@@ -69,15 +69,17 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background: #3691c9;
-}
-
-/* Підвал */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
     padding: 20px 0;
     position: fixed;
     bottom: 0;
