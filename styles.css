@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(180deg, #091236, #1E215D);
+  background: linear-gradient(180deg, #f85032, #e73827);
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -15,19 +15,19 @@ header.hero {
 }
 
 header.hero h1 {
-  color: #e3e3e3;
+  color: #ffd700;
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 
 header.hero p {
-  color: #bababa;
+  color: #ffffff;
   font-size: 1.5rem;
   margin-bottom: 3rem;
 }
 
 header.hero a.btn-primary {
-  background-color: #e63946;
+  background-color: #f4d03f;
   color: white;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -36,18 +36,98 @@ header.hero a.btn-primary {
 }
 
 nav.navbar {
-  background-color: #14213d;
+  background-color: #232526;
   padding: 0.5rem 2rem;
 }
 
 nav.navbar a.navbar-item {
-  color: #e63946;
+  color: #f4d03f;
   margin: 0 1rem;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 nav.navbar a.navbar-item:hover,
+nav.navbar a.navbar-item.active {
+  color: #ffffff;
+}
+
+.tournament-info {
+  background-color: #414345;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 4rem auto;
+  max-width: 80%;
+}
+
+.tournament-info h2 {
+  color: #f4d03f;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tournament-info p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.registration-form {
+  background-color: #333333;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.faq-section {
+  background-color: #414345;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.contact-section {
+  background-color: #333333;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+footer.footer {
+  background-color: #232526;
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+footer.footer p {
+  color: #a8b2d1;
+}
+
+@media only screen and (max-width: 768px) {
+  header.hero {
+    padding: 3rem 1rem;
+  }
+
+  header.hero h1 {
+    font-size: 2rem;
+  }
+
+  header.hero p {
+    font-size: 1rem;
+  }
+
+  nav.navbar {
+    padding: 1rem 1rem;
+  }
+
+  .tournament-info, .registration-form, .faq-section, .contact-section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 90%;
+  }
+
+  footer.footer {
+    padding: 2rem 1rem;
+  }
+}
+
 nav.navbar a.navbar-item.active {
   color: #ffffff;
 }
