@@ -1,103 +1,47 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Турнір Iron Spirit</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Додаткові стилі для адаптивного дизайну та анімації */
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #333;
-            overflow: hidden;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            transition: top 0.3s;
-        }
+class IronSpiritWebsite:
+    def __init__(self):
+        self.hero_section_title = "Ласкаво просимо до турніру Iron Spirit!"
+        self.hero_section_subtitle = "Приєднуйтесь до нас і станьте частиною цієї епічної битви!"
+        self.register_button_text = "Зареєструватись Зараз"
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            transition: background-color 0.3s;
-        }
+        self.navbar_links = ["Головна", "Про Нас", "Турніри", "Реєстрація", "FAQ", "Контакти"]
 
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+        self.about_us_section = "Розділ 'Про Нас' містить інформацію про місію та цілі турніру, організаторів та історію проведення подібних заходів."
+        self.tournaments_section = "Розділ 'Турніри' надає перелік майбутніх турнірів з можливістю сортування за датами та типами змагань, а також включає архів минулих турнірів з результатами."
+        self.registration_section = "Розділ 'Реєстрація' містить форму реєстрації з полями для введення імені, електронної пошти, назви команди та інших даних."
+        self.faq_section = "Розділ 'FAQ' містить відповіді на загальні запитання, що стосуються формату турніру, правил участі, графіка ігор тощо."
+        self.contact_section = "Розділ 'Контакти' надає інформацію про те, як зв'язатися з організаторами: адреса електронної пошти, телефонний номер, форма зворотного зв'язку."
 
-        /* Анімація для розгортання та згортання меню на мобільних пристроях */
-        @media screen and (max-width: 600px) {
-            .navbar {
-                top: -50px;
-            }
-            .navbar.responsive {
-                top: 0;
-            }
-        }
+    def display_hero_section(self):
+        print("Головна сторінка:")
+        print("Заголовок:", self.hero_section_title)
+        print("Підзаголовок:", self.hero_section_subtitle)
+        print("Кнопка:", self.register_button_text)
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav class="navbar" id="navbar">
-            <a href="#home">Головна</a>
-            <a href="#about">Про Нас</a>
-            <a href="#tournaments">Турніри</a>
-            <a href="#register">Реєстрація</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Контакти</a>
-            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="hero-section">
-            <h1>{{ iron_spirit_website.hero_section_title }}</h1>
-            <p>{{ iron_spirit_website.hero_section_subtitle }}</p>
-            <a href="#" class="button">{{ iron_spirit_website.register_button_text }}</a>
-        </section>
-        <section id="about">
-            <p>{{ iron_spirit_website.about_us_section }}</p>
-        </section>
-        <section id="tournaments">
-            <p>{{ iron_spirit_website.tournaments_section }}</p>
-        </section>
-        <section id="register">
-            <p>{{ iron_spirit_website.registration_section }}</p>
-        </section>
-        <section id="faq">
-            <p>{{ iron_spirit_website.faq_section }}</p>
-        </section>
-        <section id="contact">
-            <p>{{ iron_spirit_website.contact_section }}</p>
-        </section>
-    </main>
-    <footer>
-        <!-- Підвал сайту -->
-    </footer>
+    def display_navbar(self):
+        print("Меню навігації:")
+        for link in self.navbar_links:
+            print("-", link)
 
-    <script>
-        // JavaScript-функція для зміни видимості меню на мобільних пристроях
-        function toggleNavbar() {
-            var x = document.getElementById("navbar");
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            } else {
-                x.className = "navbar";
-            }
-        }
-    </script>
-</body>
-</html>
+    def display_about_us_section(self):
+        print("Про Нас:")
+        print(self.about_us_section)
+
+    def display_tournaments_section(self):
+        print("Турніри:")
+        print(self.tournaments_section)
+
+    def display_registration_section(self):
+        print("Реєстрація:")
+        print(self.registration_section)
+
+    def display_faq_section(self):
+        print("FAQ:")
+        print(self.faq_section)
+
+    def display_contact_section(self):
+        print("Контакти:")
+        print(self.contact_section)
+
+    def display_adaptive_design(self):
+        print("Адаптивний Дизайн: Сайт оптимізовано для відображення на різних пристроях.")
