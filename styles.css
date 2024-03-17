@@ -1,31 +1,154 @@
-/* Анімація при наведенні */
-.btn {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Паралакс ефект */
-.hero {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Адаптивний дизайн */
-@media (max-width: 768px) {
-    .navbar-menu {
-        display: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-}
-
-/* Використання шрифтів */
+/* General Styles */
 body {
-    font-family: 'Mobile Legends', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50;
+    padding: 20px 0;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+.navbar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.hero .btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.hero .btn:hover {
+    background-color: #c0392b;
+}
+
+/* About Section Styles */
+.about {
+    padding: 100px 0;
+}
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Tournaments Section Styles */
+.tournaments {
+    padding: 100px 0;
+}
+.tournaments h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Registration Section Styles */
+.registration {
+    padding: 100px 0;
+}
+.registration form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.registration form input[type="text"],
+.registration form input[type="email"],
+.registration form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.registration form textarea {
+    height: 150px;
+}
+.registration form input[type="submit"] {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.registration form input[type="submit"]:hover {
+    background-color: #219d54;
+}
+
+/* FAQ Section Styles */
+.faq {
+    padding: 100px 0;
+}
+.faq h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.faq .question {
+    margin-bottom: 20px;
+}
+.faq .question h3 {
+    font-size: 24px;
+}
+.faq .answer {
+    margin-bottom: 40px;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 100px 0;
+}
+.contact .info {
+    margin-bottom: 40px;
+}
+.contact .info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.contact .info a {
+    color: #3498db;
+    text-decoration: none;
+}
+.contact .info a:hover {
+    text-decoration: underline;
 }
