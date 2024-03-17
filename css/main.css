@@ -13,86 +13,55 @@ body {
 }
 
 /* Головний контент */
-header {
-    background-image: url('../assets/hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-}
-
-nav {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    float: left;
+    display: block;
+    position: relative;
 }
 
 nav ul li a {
-    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    color: #ddd;
+/* Стилі для випадаючого меню */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-/* Секції */
-section {
-    padding: 20px;
-    margin: 20px 0;
+.dropdown-content li {
+    float: none;
 }
 
-/* Кнопки */
-button {
-    background: #5cacf2;
-    color: #fff;
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
+.dropdown-content li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.5s;
 }
 
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
+/* Анімація fadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-}
