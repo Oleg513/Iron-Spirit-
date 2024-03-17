@@ -1,47 +1,75 @@
-class IronSpiritWebsite:
-    def __init__(self):
-        self.hero_section_title = "Ласкаво просимо до турніру Iron Spirit!"
-        self.hero_section_subtitle = "Приєднуйтесь до нас і станьте частиною цієї епічної битви!"
-        self.register_button_text = "Зареєструватись Зараз"
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
 
-        self.navbar_links = ["Головна", "Про Нас", "Турніри", "Реєстрація", "FAQ", "Контакти"]
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
-        self.about_us_section = "Розділ 'Про Нас' містить інформацію про місію та цілі турніру, організаторів та історію проведення подібних заходів."
-        self.tournaments_section = "Розділ 'Турніри' надає перелік майбутніх турнірів з можливістю сортування за датами та типами змагань, а також включає архів минулих турнірів з результатами."
-        self.registration_section = "Розділ 'Реєстрація' містить форму реєстрації з полями для введення імені, електронної пошти, назви команди та інших даних."
-        self.faq_section = "Розділ 'FAQ' містить відповіді на загальні запитання, що стосуються формату турніру, правил участі, графіка ігор тощо."
-        self.contact_section = "Розділ 'Контакти' надає інформацію про те, як зв'язатися з організаторами: адреса електронної пошти, телефонний номер, форма зворотного зв'язку."
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
 
-    def display_hero_section(self):
-        print("Головна сторінка:")
-        print("Заголовок:", self.hero_section_title)
-        print("Підзаголовок:", self.hero_section_subtitle)
-        print("Кнопка:", self.register_button_text)
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
 
-    def display_navbar(self):
-        print("Меню навігації:")
-        for link in self.navbar_links:
-            print("-", link)
+.navbar a:hover {
+    background-color: #555;
+}
 
-    def display_about_us_section(self):
-        print("Про Нас:")
-        print(self.about_us_section)
+main {
+    padding: 20px;
+}
 
-    def display_tournaments_section(self):
-        print("Турніри:")
-        print(self.tournaments_section)
+.hero-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #4CAF50;
+    color: #fff;
+}
 
-    def display_registration_section(self):
-        print("Реєстрація:")
-        print(self.registration_section)
+.hero-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 
-    def display_faq_section(self):
-        print("FAQ:")
-        print(self.faq_section)
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
 
-    def display_contact_section(self):
-        print("Контакти:")
-        print(self.contact_section)
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-    def display_adaptive_design(self):
-        print("Адаптивний Дизайн: Сайт оптимізовано для відображення на різних пристроях.")
+.button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
