@@ -1,62 +1,85 @@
-@keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://github.com/Oleg513/Iron-Spirit-/blob/main/file-mfTUTeSF2ZIkqPDNNjcNYm2F%20(2).webp?raw=true');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
 }
 
-.navbar.show {
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  animation: slideIn 0.5s forwards;
+  padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar a {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .navbar {
-    display: none;
-  }
-  .navbar.show {
-    display: flex;
-  }
+nav {
+  /* Стилі для головного меню */
 }
 
-.navbar a {
-  color: #f4d03f;
-  padding: 15px 20px;
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
   text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease-in-out;
+  font-size: 1.2em;
 }
 
-.navbar a:hover,
-.navbar a.active {
-  color: #ffffff;
-  background-color: #34495e;
+nav ul li a:hover {
+  border-bottom: 1px solid white;
 }
 
-.menu-toggle {
-  display: none;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+main {
+  text-align: center;
+  /* Інші стилі для основного контенту */
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.menu-toggle i {
-  color: #fff;
+button:hover {
+  background-color: #004499;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header, footer {
+    flex-direction: column;
+  }
+}
   font-size: 24px;
 }
 
