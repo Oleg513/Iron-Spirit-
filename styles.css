@@ -1,27 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const scrollToTopBtn = document.querySelector(".scroll-to-top-btn");
-Щоб створити темно-сірий фон для сайту, вам потрібно додати відповідний CSS-код до вашого файлу стилів. Ось приклад, як ви можете зробити це:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Spirit Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Ваша навігаційна панель, розділи та інші елементи тут -->
 
+    <!-- Кнопка "Повернутися до верху" -->
+    <button class="scroll-to-top-btn">Повернутися до верху</button>
 
-body 
-    background-color: #333; /* темно-сірий колір фону */
-    color: #fff; /* колір тексту */
-}
-Цей код задає темно-сірий колір для фону та білий колір для тексту на всій сторінці. Ви можете змінити значення `#333` на будь-який інший колір, який ви бажаєте використовувати для фону.
-
-Переконайтеся, що цей CSS-код додається до вашого файлу стилів, і він буде застосовуватися до всіх сторінок вашого сайту, надаючи їм темно-сірий фон.
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            scrollToTopBtn.classList.add("show");
-        } else {
-            scrollToTopBtn.classList.remove("show");
-        }
-    });
-
-    scrollToTopBtn.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-});
+    <script src="scripts.js"></script>
+</body>
+</html>
