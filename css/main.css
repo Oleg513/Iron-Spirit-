@@ -8,17 +8,19 @@
 }
 
 .logo {
-    width: 150px;
+    width: 100%;
     height: auto;
 }
 
 .menu-toggle {
-    display: none;
     background-color: #333;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    position: absolute; /* Додається для позиціонування кнопки */
+    top: 10px; /* Відрегулюйте за необхідності */
+    right: 10px; /* Відрегулюйте за необхідності */
 }
 
 @media (max-width: 767px) {
