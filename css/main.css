@@ -1,49 +1,35 @@
+/* Основні стилі */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Застосовується відступ з усіх боків */
-    background-color: #333; /* Темний фон для хедера */
+    padding: 10px 20px;
+    background-color: #333;
 }
 
 .logo {
-    width: 150px; /* Ширина лого */
-    height: auto; /* Висота лого автоматично регулюється */
+    width: 150px;
+    height: auto;
 }
 
 .navbar {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Елементи меню розміщуються в ряд */
+    display: flex;
 }
 
 .navbar li {
-    padding: 0 15px; /* Відступи між пунктами меню */
+    padding: 0 15px;
 }
 
 .navbar li a {
     text-decoration: none;
-    color: #fff; /* Білий колір тексту для пунктів меню */
+    color: #fff;
     font-weight: bold;
 }
 
 .navbar li a:hover {
-    text-decoration: underline; /* Підкреслення при наведенні */
+    text-decoration: underline;
 }
-
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar li {
-        padding: 5px 0; /* Відступи для мобільних пристроїв */
-    }
-}
-
+/* Інші основні стилі */
