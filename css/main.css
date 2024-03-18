@@ -1,54 +1,34 @@
-/* Основні стилі */
+/* Основні Стилі */
+
+/* Контейнер Шапки */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: transparent; /* Прозорий фон для шапки */
 }
 
+/* Логотип */
 .logo {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Логотип розтягується, щоб заповнити ширину контейнера */
+    height: auto; /* Зберігаємо пропорції зображення */
 }
 
+/* Кнопка Перемикання Меню */
 .menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* Забезпечує, що кнопка знаходиться над іншими елементами */
+    padding: 10px 20px;
+    font-size: 16px;
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    position: absolute; /* Додається для позиціонування кнопки */
-    top: 10px; /* Відрегулюйте за необхідності */
-    right: 10px; /* Відрегулюйте за необхідності */
 }
 
-@media (max-width: 767px) {
-    .menu-toggle {
-        display: none;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar li {
-        padding: 5px 0;
-    }
-
-    .navbar li a {
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-}
-
+/* Навігаційне Меню */
 .navbar {
     list-style: none;
     padding: 0;
@@ -70,4 +50,36 @@
     text-decoration: underline;
 }
 
-/* Тут можуть бути інші основні стилі */
+/* Відповідальні Стилі */
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: block; /* Кнопка меню завжди видима */
+    }
+
+    .navbar {
+        display: none; /* Меню приховане за замовчуванням */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%; /* Позиціонування під шапкою */
+        left: 0;
+        right: 0;
+        background-color: #333; /* Фон для читабельності тексту */
+    }
+
+    .navbar li a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex; /* Показати меню, коли додано клас 'active' */
+    }
+
+    .navbar li {
+        padding: 5px 0;
+    }
+}
+
+/* Тут можуть бути додані інші основні стилі */
