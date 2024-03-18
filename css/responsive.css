@@ -1,54 +1,44 @@
 /* Медіа-запити для таблетів */
 @media (min-width: 768px) and (max-width: 1024px) {
-    header h1,
-    header p {
-        font-size: smaller;
+    .header-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    nav ul {
-        display: flex;
-        justify-content: center;
+    .navbar {
+        flex-direction: column;
+        width: 100%;
     }
 
-    nav ul li {
-        margin: 0 10px;
+    .navbar li a {
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
     }
 }
 
 /* Медіа-запити для мобільних телефонів */
 @media (max-width: 767px) {
-    header h1,
-    header p {
-        font-size: smaller;
-    }
-
-    nav ul {
-        display: flex;
+    .header-container {
         flex-direction: column;
         align-items: center;
-        padding: 0;
     }
 
-    nav ul li {
-        margin: 5px 0;
+    .navbar {
+        flex-direction: column;
+        width: 100%;
     }
 
-    button {
-        font-size: smaller;
-        padding: 5px 10px;
+    .navbar li a {
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
     }
 
-    /* Застосувати стилі для всіх елементів, щоб зменшити їх розмір на мобільних пристроях */
+    .navbar li {
+        width: 100%;
+    }
 }
-
-/* Інші стилі, щоб забезпечити коректне відображення на різних пристроях */
-
-    button {
-        font-size: smaller;
-        padding: 5px 10px;
-    }
-
-    /* Застосувати стилі для всіх елементів, щоб зменшити їх розмір на мобільних пристроях */
-}
-
-/* Інші стилі, щоб забезпечити коректне відображення на різних пристроях */
+/* Інші адаптивні стилі */
