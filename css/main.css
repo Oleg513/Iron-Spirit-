@@ -29,6 +29,7 @@
         flex-direction: column;
     }
 }
+
 /* Медіа-запити для таблетів */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* ... ваші адаптивні стилі для таблетів ... */
