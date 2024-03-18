@@ -10,26 +10,27 @@
 <body>
     <header>
         <div class="header-container">
-    <img src="IMG_20240317_210008_104.jpg" alt="Iron Spirit Tournament Header" class="logo">
-    <button class="menu-toggle" aria-label="Open navigation menu">Меню</button>
-    <nav>
-        <ul class="navbar">
-            <li><a href="#home">Головна</a></li>
-            <li><a href="#about">Про Нас</a></li>
-            <li><a href="#tournaments">Турніри</a></li>
-            <li><a href="#registration">Реєстрація</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Контакти</a></li>
-        </ul>
-    </nav>
+            <img src="IMG_20240317_210008_104.jpg" alt="Iron Spirit Tournament Header" class="logo">
+            <button class="menu-toggle" aria-label="Open navigation menu">Меню</button>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про Нас</a></li>
+                    <li><a href="#tournaments">Турніри</a></li>
+                    <li><a href="#registration">Реєстрація</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <!-- Основний контент -->
-    <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
+    <main>
+        <!-- Основний контент -->
+        <section id="home">
+            <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
             <p>Ласкаво просимо до світу захопливих турнірів Iron Spirit! Підготуйтеся до нового рівня турнірів, які дозволять кожному учаснику випробувати свої сили, вдосконалити навички та стратегії для досягнення вершини в нашому проекті.</p>
             <a href="#registration">Зареєструватись Зараз</a>
         </section>
-    <main>
         <section id="about">
             <h2>Про Нас</h2>
             <p>Тут буде інформація про організаторів турніру...</p>
@@ -38,7 +39,6 @@
             <h2>Турніри</h2>
             <p>Перелік майбутніх та минулих турнірів...</p>
         </section>
-    </main>
         <section id="registration">
             <h2>Реєстрація</h2>
             <form id="registration-form">
@@ -59,18 +59,19 @@
             <h2>Контакти</h2>
             <p>Як зв'язатися з організаторами...</p>
         </section>
+    </main>
+    <footer>
         <p>© Iron Spirit Tournament</p>
     </footer>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navbar = document.querySelector('.navbar');
-        
-        menuToggle.addEventListener('click', function() {
-            navbar.classList.toggle('active');
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+            
+            menuToggle.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
         });
-    });
     </script>
 </body>
 </html>
-<head>
