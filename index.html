@@ -25,20 +25,20 @@
     </header>
     <main>
         <!-- Основний контент -->
-        <section id="home">
+        <section id="home" class="section">
             <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
             <p>Ласкаво просимо до світу захопливих турнірів Iron Spirit! Підготуйтеся до нового рівня турнірів, які дозволять кожному учаснику випробувати свої сили, вдосконалити навички та стратегії для досягнення вершини в нашому проекті.</p>
-            <a href="#registration">Зареєструватись Зараз</a>
+            <a href="#registration" class="button">Зареєструватись Зараз</a>
         </section>
-        <section id="about">
+        <section id="about" class="section">
             <h2>Про Нас</h2>
             <p>Тут буде інформація про організаторів турніру...</p>
         </section>
-        <section id="tournaments">
+        <section id="tournaments" class="section">
             <h2>Турніри</h2>
             <p>Перелік майбутніх та минулих турнірів...</p>
         </section>
-        <section id="registration">
+        <section id="registration" class="section">
             <h2>Реєстрація</h2>
             <form id="registration-form">
                 <label for="name">Ім'я:</label>
@@ -47,30 +47,30 @@
                 <input type="email" id="email" name="email" required>
                 <label for="team-name">Назва команди:</label>
                 <input type="text" id="team-name" name="team-name">
-                <input type="submit" value="Зареєструватись">
+                <input type="submit" class="button" value="Зареєструватись">
             </form>
         </section>
-        <section id="faq">
+        <section id="faq" class="section">
             <h2>FAQ</h2>
             <p>Відповіді на часті питання...</p>
         </section>
-        <section id="contact">
+        <section id="contact" class="section">
             <h2>Контакти</h2>
             <p>Як зв'язатися з організаторами...</p>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>© Iron Spirit Tournament</p>
     </footer>
     <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
-    
-    menuToggle.addEventListener('click', function() {
-        navbar.classList.toggle('active');
-    });
-});
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+            
+            menuToggle.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 </html>
