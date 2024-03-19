@@ -1,3 +1,76 @@
+/* Шапка сайту */
+.header-container {
+  background: #003366; /* Колір фону шапки */
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Елементи розподіляються з рівним проміжком */
+  align-items: center; /* Вирівнювання по вертикалі */
+  padding: 0 20px; /* Відступи по боках */
+}
+
+.logo {
+  max-width: 150px; /* Максимальна ширина логотипу */
+  height: auto;
+}
+
+/* Кнопка меню */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px; /* Розмір тексту */
+  cursor: pointer; /* Курсор у вигляді пальця при наведенні */
+}
+
+/* Стилі для меню */
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Елементи меню в рядок */
+  flex-direction: row; /* Горизонтальний напрямок */
+}
+
+.navbar li {
+  padding: 10px 20px; /* Відступи для пунктів меню */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Розмір тексту */
+}
+
+/* Стилі для активного класу меню */
+.navbar.active {
+  background-color: #005f73; /* Темно-синій фон для активного меню */
+  display: block;
+  position: absolute; /* Абсолютне позиціонування */
+  width: 100%; /* Меню на всю ширину екрану */
+}
+
+/* Стилі для меню на мобільних пристроях */
+@media (max-width: 767px) {
+  .navbar {
+    display: none; /* Приховування меню на мобільних пристроях */
+    flex-direction: column; /* Елементи меню в колонку */
+  }
+
+  .navbar.active {
+    display: block; /* Показати меню, коли активне */
+  }
+
+  .navbar li {
+    text-align: center; /* Центрування тексту пунктів меню */
+    padding: 10px 0; /* Відступи для пунктів меню */
+  }
+
+  .menu-toggle {
+    display: block; /* Показати кнопку меню на мобільних */
+  }
+}
+
+/* ... інші стилі ... */
 /* Базові стилі */
 body {
   font-family: 'Arial', sans-serif;
