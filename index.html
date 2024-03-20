@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +6,10 @@
     <link rel="stylesheet" href="css/main.css">
 </head>    
 <body>
-    <!-- Додано клас fixed-header до шапки -->
-    <header class="fixed-header">
+    <header>
         <div class="header-container">
             <img src="IMG_20240317_210008_104.jpg" alt="Iron Spirit Tournament Header" class="logo">
-            <!-- Текст кнопки змінено на "Навігація" і додано клас nav-button -->
-            <button class="nav-button menu-toggle" aria-label="Open navigation menu">Навігація</button>
+            <button class="menu-toggle" aria-label="Open navigation menu">Меню</button>
             <nav>
                 <ul class="navbar">
                     <li><a href="#home">Головна</a></li>
@@ -64,6 +61,7 @@
     <footer class="footer">
         <p>© Iron Spirit Tournament</p>
     </footer>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle');
             const navbar = document.querySelector('.navbar');
@@ -74,4 +72,3 @@
         });
     </script>
 </body>
-</html>
