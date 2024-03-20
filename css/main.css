@@ -6,17 +6,11 @@
   justify-content: space-between; /* Елементи розподіляються з рівним проміжком */
   align-items: center; /* Вирівнювання по вертикалі */
   padding: 0 20px; /* Відступи по боках */
-  position: fixed; /* Фіксація шапки */
-  width: 100%; /* Ширина на весь екран */
-  z-index: 10; /* Вище іншого контенту */
 }
 
 .logo {
-  max-width: none; /* Повна ширина */
+  max-width: 100%; /* Максимальна ширина логотипу */
   height: auto;
-  position: absolute; /* Абсолютне позиціонування */
-  left: 0;
-  right: 0;
 }
 
 /* Кнопка меню */
@@ -26,12 +20,6 @@
   color: white;
   font-size: 24px; /* Розмір тексту */
   cursor: pointer; /* Курсор у вигляді пальця при наведенні */
-  position: fixed; /* Фіксація кнопки */
-  transform: rotate(-90deg) translateX(-100%);
-  transform-origin: top left;
-  left: 0;
-  top: 50%;
-  padding: 8px 2px; /* Зменшена товщина */
 }
 
 /* Стилі для меню */
@@ -39,17 +27,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: none; /* Спочатку меню приховане */
-  flex-direction: column; /* Елементи меню у вертикальному порядку */
-  position: fixed; /* Абсолютне позиціонування */
-  top: 0;
-  left: 0;
-  background-color: #005f73; /* Фон для випадаючого меню */
-  width: 250px; /* Ширина меню */
-  height: 100%; /* Висота на весь екран */
-  transform: translateX(-100%); /* Початкове положення поза екраном */
-  transition: transform 0.3s; /* Анімація з'явлення меню */
-  z-index: 9; /* Нижче шапки */
+  display: flex; /* Елементи меню в рядок */
+  flex-direction: row; /* Горизонтальний напрямок */
 }
 
 .navbar li {
@@ -62,34 +41,54 @@
   font-size: 18px; /* Розмір тексту */
 }
 
-/* ... */
-/* Правила для різних пристроїв і додаткові стилі ... */
-/* ... */
-
-/* Секції */
-.section {
-  padding: 20px;
-  background: white;
-  margin: 60px 20px 20px; /* Додано відступ зверху для фіксованої шапки */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Стилі для активного класу меню */
+.navbar.active {
+  background-color: #005f73; /* Темно-синій фон для активного меню */
+  display: block;
+  position: absolute; /* Абсолютне позиціонування */
+  width: 100%; /* Меню на всю ширину екрану */
 }
 
-/* ... */
-/* Правила для різних пристроїв і додаткові стилі ... */
-/* ... *//* Футер */
-.footer {
+/* Стилі для меню на мобільних пристроях */
+@media (max-width: 767px) {
+  .navbar {
+    display: none; /* Приховування меню на мобільних пристроях */
+    flex-direction: column; /* Елементи меню в колонку */
+  }
+
+  .navbar.active {
+    display: block; /* Показати меню, коли активне */
+  }
+
+  .navbar li {
+    text-align: center; /* Центрування тексту пунктів меню */
+    padding: 10px 0; /* Відступи для пунктів меню */
+  }
+
+  .menu-toggle {
+    display: block; /* Показати кнопку меню на мобільних */
+  }
+}
+
+/* ... інші стилі ... */
+/* Базові стилі */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+/* Стилі хедера */
+.header {
   background-color: #003366;
   color: white;
-  text-align: center;
   padding: 10px 0;
-  position: fixed; /* Футер тепер також зафіксовано */
-  bottom: 0; /* Внизу сторінки */
-  width: 100%; /* Ширина на весь екран */
-  z-index: 10; /* Вище іншого контенту */
+  text-align: center;
+  font-size: 24px;
 }
 
-/* Стилі для кнопки реєстрації */
+/* Кнопки */
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -106,11 +105,32 @@
   background-color: #005f73;
 }
 
-/* ... */
-/* Правила для різних пристроїв і додаткові стилі ... */
-/* ... */
+/* Секції */
+.section {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-/* Зміни для адаптивного дизайну та медіа-запити */
+/* Футер */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Стилі для лого, не обмежуються максимальною шириною */
+.logo {
+  max-width: none;
+}
+
+/* Медіа-запити для мобільних пристроїв */
 @media (max-width: 767px) {
   .header-container {
     flex-direction: column;
@@ -124,25 +144,21 @@
   }
 
   .menu-toggle {
-    transform: rotate(-90deg) translateX(-100%);
-    padding: 8px 2px; /* Зменшена товщина */
-    top: 5px; /* Дрібна корекція положення кнопки */
+    width: 100%; /* Кнопка меню на всю ширину екрану */
+  }
+
+  .navbar {
+    width: 100%; /* Меню на всю ширину екрану */
+    display: none; /* Меню за замовчуванням приховане */
   }
 
   .navbar.active {
-    transform: translateX(0); /* Показати меню */
+    display: flex; /* Показати меню */
+    flex-direction: column;
   }
-
-  /* ... інші медіа-запити для таблетів ... */
 }
 
+/* Медіа-запити для таблетів */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Стилі для таблеток, які потрібно додати або змінити */
-}
-
-/* Прозорість для нижнього та верхнього колонтитулів, коли з'являється клавіатура */
-@media (max-height: 500px) {
-  .header-container, .footer {
-    display: none;
-  }
+  /* Стилізація може бути додана тут, коли ви визначите, як повинен виглядати ваш сайт на таблетках */
 }
