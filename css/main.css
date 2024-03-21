@@ -158,6 +158,71 @@ body {
   }
 }
 
+/* Стилі для меню */
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li {
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Стилі для активного класу меню */
+.navbar.active {
+  background-color: #005f73;
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+/* Стилі для меню на мобільних пристроях */
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Додавання стилів для виправлення проблем з розкривним меню */
+.dropdown-menu {
+    display: none; /* Приховує розкривне меню за замовчуванням */
+    position: absolute;
+    z-index: 1000; /* Забезпечує, що розкривне меню знаходиться над іншими елементами */
+}
+
+.menu-item:hover .dropdown-menu {
+    display: block; /* Показує розкривне меню при наведенні курсору */
+}
+
+/* Робимо корективи для мобільних пристроїв, якщо потрібно */
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        position: relative; /* Змінюємо позицію для мобільних пристроїв */
+    }
+}
 /* Медіа-запити для таблетів */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Стилізація може бути додана тут, коли ви визначите, як повинен виглядати ваш сайт на таблетках */
