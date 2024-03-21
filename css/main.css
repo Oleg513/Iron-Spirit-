@@ -3,13 +3,13 @@
   background: #003366; /* Колір фону шапки */
   color: white;
   display: flex;
-  justify-content: space-between; /* Елементи розподіляються з рівним проміжком */
-  align-items: center; /* Вирівнювання по вертикалі */
-  padding: 0 20px; /* Відступи по боках */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .logo {
-  max-width: 100%; /* Максимальна ширина логотипу */
+  max-width: 100%;
   height: auto;
 }
 
@@ -18,191 +18,20 @@
   background: none;
   border: none;
   color: white;
-  font-size: 24px; /* Розмір тексту */
-  cursor: pointer; /* Курсор у вигляді пальця при наведенні */
-}
-
-/* Стилі для меню */
-.navbar {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* Додаємо це, щоб центрувати меню */
-  width: 100%; /* Встановлюємо ширину меню */
-}
-
-/* Стилі для меню */
-.navbar {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto; /* Автоматичний відступ з обох сторін для центрування */
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* Центрування елементів меню */
-  width: 100%; /* Ширина контейнера меню */
-  max-width: 1200px; /* Максимальна ширина контейнера меню */
-}
-
-/* ... інші стилі ... */
-
-@media (max-width: 767px) {
-  .navbar {
-    display: none;
-    /* Інші стилі для мобільних версій */
-  }
-
-  .navbar.active {
-    display: flex; /* або 'block', залежно від вашого дизайну */
-    width: 100%; /* Ширина контейнера меню на всю ширину екрана */
-    margin: 0; /* Відступи не потрібні для мобільних */
-  }
-}
-/* ... інші стилі ... */
-
-/* Виправляємо зміщення для мобільних пристроїв */
-@media (max-width: 767px) {
-  .navbar {
-    /* ... інші стилі ... */
-    justify-content: flex-start; /* Починаємо вміст з лівого краю */
-  }
-}
-
-.navbar li {
-  padding: 10px 20px; /* Відступи для пунктів меню */
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px; /* Розмір тексту */
-}
-
-/* Стилі для активного класу меню */
-.navbar.active {
-  background-color: #005f73; /* Темно-синій фон для активного меню */
-  display: block;
-  position: absolute; /* Абсолютне позиціонування */
-  width: 100%; /* Меню на всю ширину екрану */
-}
-
-/* Стилі для меню на мобільних пристроях */
-@media (max-width: 767px) {
-  .navbar {
-    display: none; /* Приховування меню на мобільних пристроях */
-    flex-direction: column; /* Елементи меню в колонку */
-  }
-
-  .navbar.active {
-    display: block; /* Показати меню, коли активне */
-  }
-
-  .navbar li {
-    text-align: center; /* Центрування тексту пунктів меню */
-    padding: 10px 0; /* Відступи для пунктів меню */
-  }
-
-  .menu-toggle {
-    display: block; /* Показати кнопку меню на мобільних */
-  }
-}
-
-/* ... інші стилі ... */
-/* Базові стилі */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f5f5f5;
-}
-
-/* Стилі хедера */
-.header {
-  background-color: #003366;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
   font-size: 24px;
-}
-
-/* Кнопки */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: #008cba;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #005f73;
-}
-
-/* Секції */
-.section {
-  padding: 20px;
-  background: white;
-  margin: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Футер */
-.footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Стилі для лого, не обмежуються максимальною шириною */
-.logo {
-  max-width: none;
-}
-
-/* Медіа-запити для мобільних пристроїв */
-@media (max-width: 767px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center; /* Центрування елементів */
-  }
-
-  .logo {
-    width: 80%; /* Логотип займе 80% ширини екрану */
-    height: auto; /* Висота автоматично налаштується */
-    margin: 0 auto; /* Центрування логотипу */
-  }
-
-  .menu-toggle {
-    width: 100%; /* Кнопка меню на всю ширину екрану */
-  }
-
-  .navbar {
-    width: 100%; /* Меню на всю ширину екрану */
-    display: none; /* Меню за замовчуванням приховане */
-  }
-
-  .navbar.active {
-    display: flex; /* Показати меню */
-    flex-direction: column;
-  }
+  cursor: pointer;
 }
 
 /* Стилі для меню */
 .navbar {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto; /* Виправлено: тепер єдине визначення margin */
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; /* Виправлено: залишено для консистентності */
 }
 
 .navbar li {
@@ -223,45 +52,30 @@ body {
   width: 100%;
 }
 
-/* Стилі для меню на мобільних пристроях */
+/* Медіа-запити */
 @media (max-width: 767px) {
-  .navbar {
-    display: none;
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo, .menu-toggle {
+    width: 100%; /* Логотип та кнопка меню на всю ширину */
+  }
+
+  .navbar, .navbar.active {
+    display: none; /* Меню за замовчуванням приховане */
     flex-direction: column;
   }
 
   .navbar.active {
-    display: block;
+    display: flex; /* Показати меню */
   }
 
   .navbar li {
     text-align: center;
     padding: 10px 0;
   }
-
-  .menu-toggle {
-    display: block;
-  }
 }
 
-/* Додавання стилів для виправлення проблем з розкривним меню */
-.dropdown-menu {
-    display: none; /* Приховує розкривне меню за замовчуванням */
-    position: absolute;
-    z-index: 1000; /* Забезпечує, що розкривне меню знаходиться над іншими елементами */
-}
-
-.menu-item:hover .dropdown-menu {
-    display: block; /* Показує розкривне меню при наведенні курсору */
-}
-
-/* Робимо корективи для мобільних пристроїв, якщо потрібно */
-@media screen and (max-width: 768px) {
-    .dropdown-menu {
-        position: relative; /* Змінюємо позицію для мобільних пристроїв */
-    }
-}
-/* Медіа-запити для таблетів */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Стилізація може бути додана тут, коли ви визначите, як повинен виглядати ваш сайт на таблетках */
-}
+/* Видалено дублюючі та конфліктуючі властивості */
