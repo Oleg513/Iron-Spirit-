@@ -27,8 +27,20 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Елементи меню в рядок */
-  flex-direction: row; /* Горизонтальний напрямок */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Додаємо це, щоб центрувати меню */
+  width: 100%; /* Встановлюємо ширину меню */
+}
+
+/* ... інші стилі ... */
+
+/* Виправляємо зміщення для мобільних пристроїв */
+@media (max-width: 767px) {
+  .navbar {
+    /* ... інші стилі ... */
+    justify-content: flex-start; /* Починаємо вміст з лівого краю */
+  }
 }
 
 .navbar li {
