@@ -66,11 +66,10 @@
 /* Adjusting the navbar to push content down instead of overlapping */
 .navbar.active {
     display: block;
-    position: relative;
-    width: 100%; /* Ensure the menu doesn't extend beyond the viewport */
-    margin-left: 0; /* Reset any left margin */
-    margin-right: 0; /* Reset any right margin */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+}
     padding: 0; /* Reset any padding to prevent content shifting */
     background-color: #005f73;
     z-index: 20; /* Lower z-index to allow other elements to overlap if necessary */
