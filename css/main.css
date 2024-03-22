@@ -63,14 +63,14 @@
 
 /* Виправляємо зміщення для мобільних пристроїв */
 @media (max-width: 767px) {
-  .navbar {
-    /* ... інші стилі ... */
-    justify-content: flex-start; /* Починаємо вміст з лівого краю */
-  }
+.navbar.active {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background-color: #005f73;
 }
-
-.navbar li {
-  padding: 10px 20px; /* Відступи для пунктів меню */
 }
 
 .navbar a {
