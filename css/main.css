@@ -66,11 +66,12 @@
 .navbar.active {
     display: block;
     position: absolute;
-    top: 70px; /* Updated top value to push the menu below the header image */
+    top: 70px; /* Updated top value to ensure menu doesn't overlap header */
     left: 0;
     width: 100%;
     background-color: #005f73;
-    z-index: 999; /* High z-index to ensure menu is above other content but below the header */
+    z-index: 1000; /* Ensuring the menu is above other content but below the header, if the header has higher z-index */
+}
 }
 }
 }
