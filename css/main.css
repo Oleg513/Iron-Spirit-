@@ -66,11 +66,12 @@
 .navbar.active {
     display: block;
     position: absolute;
-    top: 60px; /* Adjusted to not overlap the header */
+    top: 100%; /* Positioning right below the header */
     left: 0;
     width: 100%;
     background-color: #005f73;
-    z-index: 10; /* Ensure it does not cover the header image */
+    z-index: 999; /* High z-index but lower than the header */
+}
 }
 }
 
