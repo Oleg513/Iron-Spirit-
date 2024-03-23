@@ -1,3 +1,47 @@
+/* Стилі для секції реєстрації */
+.section#registration {
+  background-color: #f7f7f7; /* світле тло для секції */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для полів вводу */
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Додає внутрішні відступи в область вмісту елемента */
+}
+
+/* Стилі для кнопки реєстрації */
+input[type="submit"] {
+  background-color: #5cb85c; /* зелений колір кнопки */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Стилі для кнопки при наведенні курсору */
+input[type="submit"]:hover {
+  background-color: #4cae4c; /* темніший відтінок зеленого при наведенні */
+}
+
+/* Виправлення відображення на мобільних пристроях */
+@media (max-width: 600px) {
+  .section#registration {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
 /* Шапка сайту */
 .header-container {
   background: #003366; /* Колір фону шапки */
