@@ -13,17 +13,22 @@
             <ul>
                 <li><a href="#home">Головна</a></li>
                 <li><a href="#about">Про нас</a></li>
-                <li><a href="#tournaments">Турніри</a></li>
-                <li><a href="#registration">Реєстрація</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="home">
-            <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
+
+        <section id="registration">
+            <h2>Реєстрація</h2>
+            <form id="registration-form">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Додайте інші поля за необхідності -->
+
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </section>
+
             <p>Приєднуйтесь до найзахоплюючішої події цього року.</p>
             <button onclick="location.href='#registration'">Зареєструватись Зараз</button>
         </section>
