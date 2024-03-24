@@ -1,5 +1,5 @@
 /* Стилі для секції реєстрації */
-.section#registration {
+#registration {
   background-color: #f7f7f7; /* світле тло для секції */
   padding: 20px;
   border-radius: 8px;
@@ -36,7 +36,7 @@ input[type="submit"]:hover {
 
 /* Виправлення відображення на мобільних пристроях */
 @media (max-width: 600px) {
-  .section#registration {
+  #registration {
     width: 90%;
     margin: 20px auto;
   }
@@ -70,17 +70,6 @@ input[type="submit"]:hover {
 .navbar {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* Додаємо це, щоб центрувати меню */
-  width: 100%; /* Встановлюємо ширину меню */
-}
-
-/* Стилі для меню */
-.navbar {
-  list-style: none;
-  padding: 0;
   margin: 0 auto; /* Автоматичний відступ з обох сторін для центрування */
   display: flex;
   flex-direction: row;
@@ -88,15 +77,3 @@ input[type="submit"]:hover {
   width: 100%; /* Ширина контейнера меню */
   max-width: 1200px; /* Максимальна ширина контейнера меню */
 }
-
-/* ... інші стилі ... */
-
-/* Налаштування фонового зображення для головної секції */
-.hero {
-  background-image: url('../images/your-background-image.jpg'); /* Змініть на шлях до вашого зображення */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-/* ... наступні стилі ... */
