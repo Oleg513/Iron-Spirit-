@@ -1,118 +1,124 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Spirit Tournament</title>
-    <!-- Підключення вашого CSS-файлу -->
-    <link rel="stylesheet" href="styles.css">
-    <style>
-      /* Стилі для секції реєстрації */
-      #registration {
-        background-color: #f7f7f7; /* світле тло для секції */
-        padding: 20px;
-        border-radius: 8px;
-        max-width: 500px;
-        margin: 20px auto;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Стилі для полів вводу */
-      input[type="text"],
-      input[type="email"],
-      input[type="submit"] {
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        box-sizing: border-box; /* Додає внутрішні відступи в область вмісту елемента */
-      }
-
-      /* Стилі для кнопки реєстрації */
-      input[type="submit"] {
-        background-color: #5cb85c; /* зелений колір кнопки */
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-weight: bold;
-      }
-
-      /* Стилі для кнопки при наведенні курсору */
-      input[type="submit"]:hover {
-        background-color: #4cae4c; /* темніший відтінок зеленого при наведенні */
-      }
-
-      /* Виправлення відображення на мобільних пристроях */
-      @media (max-width: 600px) {
-        #registration {
-          width: 90%;
-          margin: 20px auto;
-        }
-      }
-
-      /* Шапка сайту */
-      .header-container {
-        background: #003366; /* Колір фону шапки */
-        color: white;
-        display: flex;
-        justify-content: space-between; /* Елементи розподіляються з рівним проміжком */
-        align-items: center; /* Вирівнювання по вертикалі */
-        padding: 0 20px; /* Відступи по боках */
-      }
-
-      .logo {
-        max-width: 100%; /* Максимальна ширина логотипу */
-        height: auto;
-      }
-
-      /* Кнопка меню */
-      .menu-toggle {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 24px; /* Розмір тексту */
-        cursor: pointer; /* Курсор у вигляді пальця при наведенні */
-      }
-
-      /* Стилі для меню */
-      .navbar {
-        list-style: none;
-        padding: 0;
-        margin: 0 auto; /* Автоматичний відступ з обох сторін для центрування */
-        display: flex;
-        flex-direction: row;
-        justify-content: center; /* Центрування елементів меню */
-        width: 100%; /* Ширина контейнера меню */
-        max-width: 1200px; /* Максимальна ширина контейнера меню */
-      }
-
-      /* ... інші стилі ... */
-
-      /* Налаштування фонового зображення для головної секції */
-/* Оновлення фону для головної секції */
-.hero {
-  background-image: url('Umagic_20240324_165709839.jpg'); /* Використання вашого зображення як фону */
-  background-size: cover;
-  background-position: center;
-  height: 100vh; /* Висота секції займає весь видимий екран */
+/* Шапка сайту */
+.header-container {
+  background: #003366; /* Колір фону шапки */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-    </style>
-</head>
-<body>
-    <!-- Меню навігації (Navbar) -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Головна</a></li>
-            <li><a href="#about">Про Нас</a></li>
-            <li><a href="#tournaments">Турніри</a></li>
-            <li><a href="#registration">Реєстрація</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Контакти</a></li>
-        </ul>
-    </nav>
+.logo {
+  max-width: 100%;
+  height: auto;
+}
 
-    <!-- Головна сторінка (Home) -->
-    <section id="home" class="hero" style="background-image: url('Umagic_20240324_165709839.jpg');">
-        <div class="header-container">
+/* Кнопка меню */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Стилі для меню */
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+/* Стилі для активного класу меню */
+.navbar.active {
+  background-color: #005f73;
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+/* Медіа-запити для мобільних пристроїв */
+@media (max-width: 767px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Базові стилі */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+/* Стилі хедера */
+.header {
+  background-color: #003366;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Кнопки */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #008cba;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005f73;
+}
+
+/* Секції */
+.section {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Футер */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
