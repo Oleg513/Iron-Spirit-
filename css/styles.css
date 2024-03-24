@@ -1,15 +1,24 @@
 /* Main style sheet for Iron Spirit Tournament Website */
 
+:root {
+    --primary-color: #ffcc00;
+    --secondary-color: #305d7c;
+    --accent-color: #f4f4f4;
+    --font-family: 'Roboto', sans-serif;
+}
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-family);
+    background: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem 0;
 }
 
 header nav ul {
@@ -17,34 +26,67 @@ header nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav ul li {
-    float: left;
+    margin: 0 2rem;
 }
 
 header nav ul li a {
     display: block;
-    color: white;
+    color: inherit;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.5rem 1rem;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-header nav ul li a:hover {
-    background-color: #111;
+header nav ul li a:hover, header nav ul li a:focus {
+    color: var(--primary-color);
+    background: var(--accent-color);
 }
 
 main {
-    padding: 16px;
+    padding: 2rem;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
+    padding: 1rem;
     width: 100%;
 }
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary-color);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Add additional styles as needed */
+
