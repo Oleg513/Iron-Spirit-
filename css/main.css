@@ -6,6 +6,96 @@
     <title>Iron Spirit Tournament</title>
     <!-- Підключення вашого CSS-файлу -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Стилі для секції реєстрації */
+      #registration {
+        background-color: #f7f7f7; /* світле тло для секції */
+        padding: 20px;
+        border-radius: 8px;
+        max-width: 500px;
+        margin: 20px auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Стилі для полів вводу */
+      input[type="text"],
+      input[type="email"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box; /* Додає внутрішні відступи в область вмісту елемента */
+      }
+
+      /* Стилі для кнопки реєстрації */
+      input[type="submit"] {
+        background-color: #5cb85c; /* зелений колір кнопки */
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      /* Стилі для кнопки при наведенні курсору */
+      input[type="submit"]:hover {
+        background-color: #4cae4c; /* темніший відтінок зеленого при наведенні */
+      }
+
+      /* Виправлення відображення на мобільних пристроях */
+      @media (max-width: 600px) {
+        #registration {
+          width: 90%;
+          margin: 20px auto;
+        }
+      }
+
+      /* Шапка сайту */
+      .header-container {
+        background: #003366; /* Колір фону шапки */
+        color: white;
+        display: flex;
+        justify-content: space-between; /* Елементи розподіляються з рівним проміжком */
+        align-items: center; /* Вирівнювання по вертикалі */
+        padding: 0 20px; /* Відступи по боках */
+      }
+
+      .logo {
+        max-width: 100%; /* Максимальна ширина логотипу */
+        height: auto;
+      }
+
+      /* Кнопка меню */
+      .menu-toggle {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px; /* Розмір тексту */
+        cursor: pointer; /* Курсор у вигляді пальця при наведенні */
+      }
+
+      /* Стилі для меню */
+      .navbar {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto; /* Автоматичний відступ з обох сторін для центрування */
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Центрування елементів меню */
+        width: 100%; /* Ширина контейнера меню */
+        max-width: 1200px; /* Максимальна ширина контейнера меню */
+      }
+
+      /* ... інші стилі ... */
+
+      /* Налаштування фонового зображення для головної секції */
+      .hero {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+    </style>
 </head>
 <body>
     <!-- Меню навігації (Navbar) -->
@@ -21,28 +111,5 @@
     </nav>
 
     <!-- Головна сторінка (Home) -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" style="background-image: url('Umagic_20240324_165709839.jpg');">
         <div class="header-container">
-            <img src="path/to/your/logo.png" alt="Логотип" class="logo">
-            <button class="menu-toggle">&#9776;</button>
-        </div>
-        <div class="hero-content">
-            <h1>Ласкаво просимо до турніру Iron Spirit!</h1>
-            <p>Приєднуйтесь до нашого турніру і випробуйте свої сили!</p>
-            <a href="#registration" class="btn">Зареєструватись Зараз</a>
-        </div>
-    </section>
-
-    <!-- Про Нас (About Us) -->
-    <section id="about">
-        <h2>Про Нас</h2>
-        <p>Ласкаво просимо до Iron Spirit - вашого провідника у світі захоплюючих турнірів! З 2022 року ми з великим ентузіазмом організовуємо найзахоплюючіші події для геймерів усього світу.</p>
-        <p>Наш досвід із проведення численних турнірів гарантує якість та високий рівень організації, а також вражаючі призи для переможців. Ми вдячні нашим учасникам за відгуки та підтримку, що надихають нас робити ще краще!</p>
-        <p>Не забудьте також з'єднатися з нами в нашому власному турнірному лобі від Monton у культовій грі Mobile Legends: Bang Bang.</p>
-    </section>
-
-    <!-- Інші секції (Tournaments, Registration, FAQ, Contact) -->
-
-    <!-- Підключення скриптів або інших ресурсів -->
-</body>
-</html>
