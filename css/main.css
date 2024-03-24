@@ -97,6 +97,34 @@ input[type="submit"]:hover {
     /* Інші стилі для мобільних версій */
   }
 
+/* Стилі для навігаційної панелі */
+.header {
+  background: #000;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: #f00;
+  transition: color 0.3s ease-in-out;
+}
+
   .navbar.active {
     display: flex; /* або 'block', залежно від вашого дизайну */
     width: 100%; /* Ширина контейнера меню на всю ширину екрана */
