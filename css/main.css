@@ -90,11 +90,14 @@
       /* ... інші стилі ... */
 
       /* Налаштування фонового зображення для головної секції */
-      .hero {
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-      }
+/* Оновлення фону для головної секції */
+.hero {
+  background-image: url('Umagic_20240324_165709839.jpg'); /* Використання вашого зображення як фону */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Висота секції займає весь видимий екран */
+}
+
     </style>
 </head>
 <body>
