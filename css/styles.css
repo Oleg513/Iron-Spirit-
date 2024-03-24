@@ -1,10 +1,13 @@
 /* Main style sheet for Iron Spirit Tournament Website */
 
-:root {
-    --primary-color: #ffcc00;
-    --secondary-color: #305d7c;
-    --accent-color: #f4f4f4;
-    --font-family: 'Roboto', sans-serif;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background: url('../img/background-image.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--secondary-color);
+}
 }
 
 body, html {
